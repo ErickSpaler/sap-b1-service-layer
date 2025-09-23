@@ -41,7 +41,7 @@ public class ItemsController : ControllerBase
     public async Task<IActionResult> GetItems()
     {
         var client = await GetClientAsync();
-        string url = $"{_sapSettings.BaseUrl}Items?$select=ItemCode,ItemName,ForeignName&$top=100";
+        string url = $"{_sapSettings.BaseUrl}Items?$select=ItemCode,ItemName,ForeignName";
 
         var response = await client.GetAsync(url);
         var result = await response.Content.ReadAsStringAsync();
