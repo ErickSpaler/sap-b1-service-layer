@@ -1,4 +1,4 @@
-##  📘 API SAP Business One Integration
+##  📘 API SAP Business One Integration (Protótipo)
 
 
 
@@ -18,12 +18,13 @@ Esta API foi desenvolvida em ASP.NET Core para integrar com o SAP Business One S
 
 ### 🚀 Como rodar o projeto
 
-#### 1. Clone o repositório
+#### 1. Clone o repositório no diretório desejado
 
 ```bash
-git clone https://github.com/seu-usuario/aplication_sl.git
-cd aplication_sl
+git clone https://github.com/ErickSpaler/sap-b1-service-layer.git
 ```
+Abra o arquivo aplication_sl.sln no Visual Studio Community 2022.
+
 
 #### 2. Configure o appsettings.json
 
@@ -41,18 +42,6 @@ Crie um arquivo appsettings.json na raiz do projeto com base no appsettings.exam
 }
 ```
 ⚠️ Nunca versionar esse arquivo — ele está protegido no .gitignore.
-
-#### 3. Restaure os pacotes e compile
-```bash
-dotnet restore
-dotnet build
-```
-
-#### 4. Execute a aplicação
-```bash
-dotnet run
-```
-
 
 ------------
 
@@ -105,7 +94,12 @@ Cookie: B1SESSION=SEU_SESSION_ID
 ------------
 
 
+### 👨‍💻 Autor
 
+#### Desenvolvido por Erick Spaler 
+📍 Curitiba, PR — Brasil 
+
+🛠️ Integração de sistemas com SAP Business One
 
 
 
