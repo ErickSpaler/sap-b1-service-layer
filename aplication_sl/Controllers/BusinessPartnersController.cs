@@ -34,12 +34,12 @@ public class BusinessPartnersController : ControllerBase
         return client;
     }
 
-    // GET - Lista os Business Partners (limitado a 100)
+    // GET - Lista os Business Partners
     [HttpGet]
     public async Task<IActionResult> GetBusinessPartners()
     {
         var client = await GetClientAsync();
-        string url = $"{_sapSettings.BaseUrl}BusinessPartners?$select=CardCode,CardName,CardType&$top=100";
+        string url = $"{_sapSettings.BaseUrl}BusinessPartners?$select=CardCode,CardName,CardType";
 
         var response = await client.GetAsync(url);
         var result = await response.Content.ReadAsStringAsync();
